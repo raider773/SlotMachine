@@ -1,0 +1,34 @@
+    • Una máquina tragamonedas se caracteriza por un número fijo de casillas que 
+      utiliza para formar la combinación. En cada casilla se mostrará una fruta que 
+      puede ser banana, frutilla, guinda, manzana, sandía o uva. 
+    • Cada máquina tiene una recaudación (la cantidad de dinero que contiene en un momento determinado). 
+    • Se puede crear la máquina con una recaudación inicial para dar premios, 
+      pero no es obligatorio ya que podemos iniciar una máquina con 0 de recaudación. 
+    • La recaudación se irá incrementando con las jugadas de los usuarios y se reducirá 
+      cuando se concedan los premios.
+    • La máquina también tiene un valor de recaudación mínimo, cuando se alcanza ese 
+      valor se debe mostrar un mensaje en pantalla de juego indicando que se ha alcanzado 
+      la recaudación mínima y existe posibilidad de no poder pagar los próximos premios.
+    • Cada máquina gestiona el conjunto de premios que puede dar, por lo que el sistema 
+      debe permitir el alta y baja de premios. 
+    • Cada premio consiste en una combinación concreta de frutas a la que le corresponde 
+      una cantidad fija de dinero. Nótese que el número de frutas de la combinación 
+      dependerá de la máquina tragamonedas en la que se va a registrar dicho premio. 
+      Por tanto, en una máquina sólo podrán registrarse aquellos premios cuyo tamaño de 
+      la combinación coincida con el número de casillas de dicha máquina. Por ejemplo si 
+      se creó una máquina con tres casillas, las combinaciones premiadas deberían ser del tipo:
+    	• una combinación de tres frutillas premio $500. 
+    	• una combinación de dos frutillas y una pera $ 100.
+   		• Una combinación de dos manzanas y una uva $250.
+    • Cuando un jugador desea jugar en una máquina debe ingresar dinero para tener 
+      crédito disponible. Se puede jugar si el crédito disponible en la máquina es igual 
+      o superior al coste de la jugada. El precio de una jugada es fijo para cada máquina. 
+    • El crédito puede incrementarse cada vez que se consiga un premio o bien cuando 
+      ingrese dinero a la máquina.
+    • En cualquier momento se puede cobrar el crédito disponible.
+    • En cada jugada se generará aleatoriamente una combinación de frutas del tamaño 
+      de la combinación fijado en la máquina y se comprobará si: 
+	    • dicha combinación tiene premio (es decir, se encuentra entre los premios registrados)
+	    • el premio por conceder es menor o igual que la recaudación.
+	    • el premio es aceptado, de ser así se incrementará el crédito disponible. Si no se acepta se pierde.
+    • La máquina no concede los premios de forma automática, la máquina siempre debe recibir la orden de aceptación del premio.
